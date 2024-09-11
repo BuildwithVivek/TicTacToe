@@ -1,0 +1,159 @@
+/* App.css */
+
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  overflow: hidden;
+}
+
+/* Game Container */
+.App {
+  text-align: center;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 90%;
+  width: 400px;
+  margin-bottom: 50px;
+  /* Space for the footer */
+}
+
+/* Board and Squares */
+.board-row {
+  display: flex;
+  justify-content: center;
+}
+
+.square {
+  width: 80px;
+  height: 80px;
+  background: #fff;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  margin: 2px;
+}
+
+.square:hover {
+  background: #f9f9f9;
+  transform: scale(1.05);
+}
+
+.square:focus {
+  outline: none;
+}
+
+/* Refresh Button */
+.refresh {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.refresh:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Status and Game ID */
+.status {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.GameID {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.GameID p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #666;
+}
+
+/* Buttons for Creating and Joining Game */
+button {
+  background-color: #28a745;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+
+.footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .square {
+    width: 70px;
+    height: 70px;
+    font-size: 28px;
+  }
+
+  .refresh,
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .App {
+    max-width: 100%;
+    padding: 15px;
+  }
+}

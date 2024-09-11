@@ -1,0 +1,55 @@
+# Node.js modules
+node_modules/
+
+# Build output directories
+dist/
+build/
+
+# Environment variables
+.env
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+jspm_packages/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Test coverage
+coverage/
+
+# Miscellaneous
+*.tgz
+*.gz
+*.zip
+
+# Sockets
+*.sock
+
+# Compiled files
+*.tsbuildinfo
+
+# System files
+*.pid
+*.seed
+*.pid.lock
+
+# Ignore all hidden files (dotfiles) except for .gitignore
+.*
+!.gitignore
+
+# Ignore package-lock.json and yarn.lock if you don't want them in version control
+# package-lock.json
+# yarn.lock
